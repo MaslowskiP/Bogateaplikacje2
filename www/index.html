@@ -15,10 +15,28 @@
 		  <div data-role="header">
 			<h1>Moja wizytówka</h1>
 		  </div>
-		  <div data-role="main" class="ui-content">
-			<p><h1>Piotr Masłowski</h1><br>My email address: rombacz@op.pl<br>Field of study: IT</p>
-			<a href="#interests" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" >Zobacz moje zainteresowania</a> 
-		  </div>
+		  <div id="pageone" data-role="main" class="ui-content">
+
+			<a href="#myPopup1" data-rel="popup" data-position-to="window">
+				Masuria</a>
+				<a href="#myPopup2" data-rel="popup" data-position-to="window">
+			Pomerania</a>
+			<a href="#myPopup3" data-rel="popup" data-position-to="window">
+			The Tatra Mountains</a>
+
+			<div data-role="popup" id="myPopup1">
+				<p>Zdjęcie z Masuria!</p> 
+				<a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Zamknij</a><img src="img/1.jpg" style="width:800px;height:400px;" alt="Masuria">
+			</div>
+			<div data-role="popup" id="myPopup2">
+				<p>Zdjęcie z Masuria!</p> 
+				<a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Zamknij</a><img src="img/2.jpg" style="width:800px;height:400px;" alt="Pomerania">
+			</div>
+			<div data-role="popup" id="myPopup2">
+				<p>Zdjęcie z Masuria!</p> 
+				<a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Zamknij</a><img src="img/3.jpg" style="width:800px;height:400px;" alt="The Tatra Mountains">
+			</div>
+		</div>
 		  <div data-role="footer" data-position="fixed">
 			<h1>(c) Piotr Masłowski</h1>
 		  </div> 
