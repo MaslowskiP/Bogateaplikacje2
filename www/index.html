@@ -13,15 +13,11 @@
 		<!-- My app main page -->
 		<div data-role="page" id="pageone">
 		  <div data-role="header">
-			<h1>GUI</h1>
+			<h1>Moja wizytówka</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<p>The graphical user interface (GUI), is a type of user interface that allows users to interact with electronic
-devices through graphical icons and visual indicators such as secondary notation, instead of text-based user
-interfaces, typed command labels or text navigation. GUIs were introduced in reaction to the perceived steep
-learning curve of command-line interfaces (CLIs), which require commands to be typed on a computer
-keyboard.</p>
-			<!-- <a href="#details" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" onclick="deviceInfo()">Let me introduce myself!</a> -->
+			<p><h1>Piotr Masłowski</h1><br>My email address: rombacz@op.pl<br>Field of study: IT</p>
+			<a href="#interests" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" >Zobacz moje zainteresowania</a> 
 		  </div>
 		  <div data-role="footer" data-position="fixed">
 			<h1>(c) Piotr Masłowski</h1>
@@ -29,13 +25,17 @@ keyboard.</p>
 		</div> 
 		
 		<!-- Mobile device details page -->
-		<div data-role="page" id="details" data-dialog="true">
-			<div data-role="header" data-theme="a">
-				<h1>It's me</h1>
+		<div data-role="page" id="interests">
+			<div data-role="header">
+				<h1>Moje zainteresowania</h1>
 			</div>
 			<div role="main" class="ui-content">
-				<p id="deviceDetails">Place for device details ...</p>
+				<p>Moje zainteresowania to programowanie, muzyka, książki i tortilla z serem :3 Oprócz tego dodaje drugie zdanie bo tak było w zadaniu he</p>
+				<a href="#pageone" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Powrót</a>
 			</div>
+			<div data-role="footer" data-position="fixed">
+				<h1>(c) Piotr Masłowski</h1>
+		  </div> 
 		</div>		
 		
 	</body>
