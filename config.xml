@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-		id          = "zad4"
+		id          = "zad5"
         version     = "1.0.0" >
 
-    <name>Order</name>
-    <description>Order</description>
+    <name>Drinks</name>
+    <description>Przepisy na różne drinki</description>
     <author email="johnbrown@gmail.com">
 		Piotr Masłowski
 	</author>

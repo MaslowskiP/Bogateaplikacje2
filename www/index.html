@@ -19,28 +19,54 @@
 		
 		
 		<div data-role="page" id="pageone">
+		
+			<div data-role="panel" id="myPanel">
+			<h2>Whiskey z cola</h2>
+			<p>
+			<img src="img/whhisky.jpg">
+			Składniki:<br>
+1 ½ Porcje Irlandzka whiskey<br>
+Cola<br>
+1 Cząstka Limonka<br>Napełnij szklankę typu whisky lodem. Dodaj irlandzką whiskey. Dopełnij colą. Dekoruj limonką.</p>
+			</div>
+			<div data-role="panel" id="myPanel2">
+			<h2>Lemoniada</h2>
+			<p><img src="img/lemoniada_02.jpg"><br>SKŁADNIKI<br>
+
+ 4 PORCJE<br>
+2 pomarańcze<br>
+2 cytryny<br>
+1 limonka lub dodatkowa cytryna<br>
+4 łyżki cukru<br>
+6 nasion kardamonu<br>
+gałązka mięty<br>
+1 litr zimnej wody<br>
+kilka kostek lodu<br>Pomarańcze, cytryny i limonkę dokładnie umyć. 1 pomarańczę i 1 cytrynę pokroić na półplasterki, włożyć do dzbanka, zasypać cukrem i wymieszać. Wstawić do lodówki.<br>
+Nasiona kardamonu delikatnie rozgnieść i wyłuskać owoce, włożyć na rozgrzaną małą patelnię i podgrzewać przez około 1 minutę aż uwolnią swój aromat. Dodać do dzbanka z cytrusami, włożyć gałązkę mięty i wymieszać. Wstawić do lodówki na minimum godzinę (można dłużej), od czasu do czasu można zamieszać i ugnieść końcem łyżki.<br>
+Wlać zimną wodę do dzbanka, dodać sok wyciśnięty z drugiej pomarańczy, sok z cytryny i limonki i dokładnie wymieszać długą łyżką. Przed podaniem dodać kostki lodu.</p>
+			</div>
+			<div data-role="panel" id="myPanel3">
+			<h2>Gin z tonikiem</h2>
+			<p>
+			<img src="img/gin.jpg"><br>Składniki<br>
+
+100 ml ginu<br>
+100 ml toniku<br>
+Cytrynka i mieta do dekoracji<br>Wymieszac wszystkie płyny i udekorować cytryna i mięta.</p>
+			</div>
+		
 		  <div data-role="header">
-			<h1>Zamów jedzenie</h1>
+			<h1>Wybierz drink</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<p><h1>Wypełnij dane:</h1><br>
-			<label for="name">Imię i nazwisko: </label>
-			<input type="text" name="name" id="name" value=""><br>
-			<label for="date">Data: </label>
-			<input type="date" name="date" id="date" value=""><br>
-			<label for="product" class="select">Wybierz jedzenie: </label>
-			<select name="product" id="product">
-    			<option value="tortilla">Tortilla z serem</option>
-    			<option value="pizza">Pizza</option>
-    			<option value="frytki">Frytki</option>
-    			<option value="paczek">Pączek</option>
-				<option value="karkowka">Karkówka z grilla</option>
-			</select><br>
-			<label for="number-2">Podaj ilość: </label>
-     		<input type="number" data-clear-btn="true" name="number" pattern="^[1-9][0-9]?$|^100$" id="number" value="">
-			<br>
-			<input type="submit" value="Akceptuj" />
-			<input type="reset" value="Odrzuć" />
+			<p>
+
+
+				<a href="#myPanel" class="ui-btn ui-btn-inline"><img src="img/whhisky.jpg" width="26" height="26"></a>
+				<a href="#myPanel2" class="ui-btn ui-btn-inline"><img src="img/lemoniada_02.jpg" width="26" height="26"></a>
+				<a href="#myPanel3" class="ui-btn ui-btn-inline"><img src="img/gin.jpg" width="26" height="26"></a>
+			
+			
 			</p>
 		  </div>
 		  <div data-role="footer" data-position="fixed">
