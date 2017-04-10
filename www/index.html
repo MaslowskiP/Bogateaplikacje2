@@ -7,36 +7,48 @@
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		
+		<link rel="stylesheet" href="themes/zad4.min.css" />
+		<!-- <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" /> -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
 	</head>
 	<body onload="init()">
 		
-		<!-- My app main page -->
+		
 		<div data-role="page" id="pageone">
 		  <div data-role="header">
-			<h1>Moja wizytówka</h1>
+			<h1>Zamów jedzenie</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<p><h1>Piotr Masłowski</h1><br>My email address: rombacz@op.pl<br>Field of study: IT</p>
-			<a href="#interests" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" >Zobacz moje zainteresowania</a> 
+			<p><h1>Wypełnij dane:</h1><br>
+			<label for="name">Imię i nazwisko: </label>
+			<input type="text" name="name" id="name" value=""><br>
+			<label for="date">Data: </label>
+			<input type="date" name="date" id="date" value=""><br>
+			<label for="product" class="select">Wybierz jedzenie: </label>
+			<select name="product" id="product">
+    			<option value="tortilla">Tortilla z serem</option>
+    			<option value="pizza">Pizza</option>
+    			<option value="frytki">Frytki</option>
+    			<option value="paczek">Pączek</option>
+				<option value="karkowka">Karkówka z grilla</option>
+			</select><br>
+			<label for="number-2">Podaj ilość: </label>
+     		<input type="number" data-clear-btn="true" name="number" pattern="^[1-9][0-9]?$|^100$" id="number" value="">
+			<br>
+			<input type="submit" value="Akceptuj" />
+			<input type="reset" value="Odrzuć" />
+			</p>
 		  </div>
 		  <div data-role="footer" data-position="fixed">
 			<h1>(c) Piotr Masłowski</h1>
 		  </div> 
 		</div> 
 		
-		<!-- Mobile device details page -->
-		<div data-role="page" id="interests">
-			<div data-role="header">
-				<a href="#pageone" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-btn-inline"></a><h1>Moje zainteresowania</h1>
-			</div>
-			<div role="main" class="ui-content">
-				<p>Moje zainteresowania to programowanie, muzyka, książki i tortilla z serem :3 Oprócz tego dodaje drugie zdanie bo tak było w zadaniu he</p>
-				
-			</div>
-			<div data-role="footer" data-position="fixed">
-				<h1>(c) Piotr Masłowski</h1>
-		  </div> 
-		</div>		
+	
 		
 	</body>
 </html>
